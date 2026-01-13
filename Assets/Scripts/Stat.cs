@@ -6,26 +6,24 @@ using UnityEngine;
 
 public enum Stat
 {
-    // Behaviour stats
-    [StringValue("Hit Damage")]
+    [StringValue("Урон", "Hit Damage")]
     HIT_DAMAGE = 0,
-    [StringValue("Speed")]
+    [StringValue("Скорость", "Speed")]
     SPEED = 1,
-    [StringValue("Price")]
+    [StringValue("Цена", "Price")]
     PRICE = 2,
-    [StringValue("Expl. Range")]
+    [StringValue("Радиус взрыва", "Expl. Range")]
     EXPLOSION_RANGE = 3,
-    [StringValue("Expl. Damage")]
+    [StringValue("Урон взрыва", "Expl. Damage")]
     EXPLOSION_DAMAGE = 4,
-    [StringValue("# Mini Balls")]
+    [StringValue("Кол-во мини шаров", "# Mini Balls")]
     NUMBER_OF_MINI_SCATTER_BALLS = 5,
-    [StringValue("Money on Collision")]
+    [StringValue("Деньги за столкновение", "Money on Collision")]
     MONEY_ON_COLLISION = 6,
 
-    // Demographic stats
-    [StringValue("Count")]
+    [StringValue("Количество", "Count")]
     COUNT = 101,
-    [StringValue("Total Damage")]
+    [StringValue("Общий урон", "Total Damage")]
     TOTAL_DAMAGE = 102,
 }
 
@@ -37,7 +35,7 @@ public static class EnumExtensions
 
         if (field.GetCustomAttribute(typeof(StringValueAttribute)) is StringValueAttribute attribute)
         {
-            return attribute.Value;
+            return attribute.Get();
         }
 
         return value.ToString();

@@ -10,8 +10,8 @@ using YG;
 public class Upgrade : MonoBehaviour
 {
     [Header("Upgrade Changes")]
-    public string title;
-    public string description;
+    public LocalizedText title;
+    public LocalizedText description;
     public Stats ballStats;
     public Stat statToUpgrade;
     public UpgradeFunctions upgradeFunctions;
@@ -60,7 +60,7 @@ public class Upgrade : MonoBehaviour
 
     private void UpdateText()
     {
-        titleText.text = title;
+        titleText.text = title.Get();
         effectText.text = $"+ {FormatNumber(upgradeFunctions.GetEffectAtLevel(currentLevel))}";
         levelText.text = $"{currentLevel} / {upgradeFunctions.GetMaxLevel()}";
         progressBar.SetMaxValue((int)upgradeFunctions.GetPriceAtLevel(currentLevel));
@@ -92,4 +92,3 @@ public class Upgrade : MonoBehaviour
         YG2.SaveProgress();
     }
 }
-

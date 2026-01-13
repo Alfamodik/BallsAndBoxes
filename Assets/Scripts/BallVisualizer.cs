@@ -21,8 +21,8 @@ public class BallVisualizer : MonoBehaviour
         displayName = transform.Find("DisplayName").GetComponent<TextMeshProUGUI>();
         description = transform.Find("Description").GetComponent<TextMeshProUGUI>();
 
-        displayName.text = ballStats.displayName;
-        description.text = ballStats.description;
+        displayName.text = ballStats.displayName.Get();
+        description.text = ballStats.description.Get();
     }
 
 }

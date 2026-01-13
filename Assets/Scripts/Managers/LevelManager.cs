@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
+using YG;
 
 public class LevelManager : MonoBehaviour
 {
@@ -28,6 +29,7 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
+        LoadProgress();
         HideAllBoxes();
         EnableBoxesOfCurrentLevel();
         CheckRemainingBoxes();
@@ -91,6 +93,7 @@ public class LevelManager : MonoBehaviour
         HideBoxesOfCurrentLevel();
         _currentLevelIndex++;
         EnableBoxesOfCurrentLevel();
+        SaveProgress();
     }
 
     public void LeaveGame()
@@ -98,6 +101,14 @@ public class LevelManager : MonoBehaviour
         Application.Quit();
     }
 
+    private void LoadProgress()
+    {
+        _currentLevelIndex = YG2.saves.level;
+    }
 
-
+    private void SaveProgress()
+    {
+        YG2.saves.level = _currentLevelIndex;
+        YG2.SaveProgress();
+    }
 }

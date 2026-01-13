@@ -161,7 +161,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Standalone: com.Thommynator.Balls---Boxes
+    Standalone: com.Thommynator.Balls--n-Boxes
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -657,17 +657,17 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: YandexGamesPlatform_yg;PLUGIN_YG_2;TMP_YG2;NJSON_YG2;InterstitialAdv_yg;RewardedAdv_yg;Localization_yg;AutoTranslateLangs_yg;StickyAdv_yg
-    LinuxHeadlessSimulation: YandexGamesPlatform_yg;PLUGIN_YG_2;TMP_YG2;NJSON_YG2;InterstitialAdv_yg;RewardedAdv_yg;Localization_yg;AutoTranslateLangs_yg;StickyAdv_yg
-    Nintendo Switch: YandexGamesPlatform_yg;PLUGIN_YG_2;TMP_YG2;NJSON_YG2;InterstitialAdv_yg;RewardedAdv_yg;Localization_yg;AutoTranslateLangs_yg;StickyAdv_yg
-    PS4: YandexGamesPlatform_yg;PLUGIN_YG_2;TMP_YG2;NJSON_YG2;InterstitialAdv_yg;RewardedAdv_yg;Localization_yg;AutoTranslateLangs_yg;StickyAdv_yg
-    PS5: YandexGamesPlatform_yg;PLUGIN_YG_2;TMP_YG2;NJSON_YG2;InterstitialAdv_yg;RewardedAdv_yg;Localization_yg;AutoTranslateLangs_yg;StickyAdv_yg
-    Standalone: MOREMOUNTAINS_NICEVIBRATIONS_INSTALLED;YandexGamesPlatform_yg;PLUGIN_YG_2;TMP_YG2;NJSON_YG2;InterstitialAdv_yg;RewardedAdv_yg;Localization_yg;AutoTranslateLangs_yg;StickyAdv_yg
-    WebGL: MOREMOUNTAINS_NICEVIBRATIONS_INSTALLED;YandexGamesPlatform_yg;PLUGIN_YG_2;TMP_YG2;NJSON_YG2;InterstitialAdv_yg;RewardedAdv_yg;Localization_yg;AutoTranslateLangs_yg;StickyAdv_yg
-    Windows Store Apps: YandexGamesPlatform_yg;PLUGIN_YG_2;TMP_YG2;NJSON_YG2;InterstitialAdv_yg;RewardedAdv_yg;Localization_yg;AutoTranslateLangs_yg;StickyAdv_yg
-    XboxOne: YandexGamesPlatform_yg;PLUGIN_YG_2;TMP_YG2;NJSON_YG2;InterstitialAdv_yg;RewardedAdv_yg;Localization_yg;AutoTranslateLangs_yg;StickyAdv_yg
-    iPhone: YandexGamesPlatform_yg;PLUGIN_YG_2;TMP_YG2;NJSON_YG2;InterstitialAdv_yg;RewardedAdv_yg;Localization_yg;AutoTranslateLangs_yg;StickyAdv_yg
-    tvOS: YandexGamesPlatform_yg;PLUGIN_YG_2;TMP_YG2;NJSON_YG2;InterstitialAdv_yg;RewardedAdv_yg;Localization_yg;AutoTranslateLangs_yg;StickyAdv_yg
+    Android: YandexGamesPlatform_yg;PLUGIN_YG_2;TMP_YG2;NJSON_YG2;InterstitialAdv_yg;RewardedAdv_yg;Localization_yg;AutoTranslateLangs_yg;StickyAdv_yg;Storage_yg;Fullscreen_yg;Authorization_yg
+    LinuxHeadlessSimulation: YandexGamesPlatform_yg;PLUGIN_YG_2;TMP_YG2;NJSON_YG2;InterstitialAdv_yg;RewardedAdv_yg;Localization_yg;AutoTranslateLangs_yg;StickyAdv_yg;Storage_yg;Fullscreen_yg;Authorization_yg
+    Nintendo Switch: YandexGamesPlatform_yg;PLUGIN_YG_2;TMP_YG2;NJSON_YG2;InterstitialAdv_yg;RewardedAdv_yg;Localization_yg;AutoTranslateLangs_yg;StickyAdv_yg;Storage_yg;Fullscreen_yg;Authorization_yg
+    PS4: YandexGamesPlatform_yg;PLUGIN_YG_2;TMP_YG2;NJSON_YG2;InterstitialAdv_yg;RewardedAdv_yg;Localization_yg;AutoTranslateLangs_yg;StickyAdv_yg;Storage_yg;Fullscreen_yg;Authorization_yg
+    PS5: YandexGamesPlatform_yg;PLUGIN_YG_2;TMP_YG2;NJSON_YG2;InterstitialAdv_yg;RewardedAdv_yg;Localization_yg;AutoTranslateLangs_yg;StickyAdv_yg;Storage_yg;Fullscreen_yg;Authorization_yg
+    Standalone: MOREMOUNTAINS_NICEVIBRATIONS_INSTALLED;YandexGamesPlatform_yg;PLUGIN_YG_2;TMP_YG2;NJSON_YG2;InterstitialAdv_yg;RewardedAdv_yg;Localization_yg;AutoTranslateLangs_yg;StickyAdv_yg;Storage_yg;Fullscreen_yg;Authorization_yg
+    WebGL: MOREMOUNTAINS_NICEVIBRATIONS_INSTALLED;YandexGamesPlatform_yg;PLUGIN_YG_2;TMP_YG2;NJSON_YG2;InterstitialAdv_yg;RewardedAdv_yg;Localization_yg;AutoTranslateLangs_yg;StickyAdv_yg;Storage_yg;Fullscreen_yg;Authorization_yg
+    Windows Store Apps: YandexGamesPlatform_yg;PLUGIN_YG_2;TMP_YG2;NJSON_YG2;InterstitialAdv_yg;RewardedAdv_yg;Localization_yg;AutoTranslateLangs_yg;StickyAdv_yg;Storage_yg;Fullscreen_yg;Authorization_yg
+    XboxOne: YandexGamesPlatform_yg;PLUGIN_YG_2;TMP_YG2;NJSON_YG2;InterstitialAdv_yg;RewardedAdv_yg;Localization_yg;AutoTranslateLangs_yg;StickyAdv_yg;Storage_yg;Fullscreen_yg;Authorization_yg
+    iPhone: YandexGamesPlatform_yg;PLUGIN_YG_2;TMP_YG2;NJSON_YG2;InterstitialAdv_yg;RewardedAdv_yg;Localization_yg;AutoTranslateLangs_yg;StickyAdv_yg;Storage_yg;Fullscreen_yg;Authorization_yg
+    tvOS: YandexGamesPlatform_yg;PLUGIN_YG_2;TMP_YG2;NJSON_YG2;InterstitialAdv_yg;RewardedAdv_yg;Localization_yg;AutoTranslateLangs_yg;StickyAdv_yg;Storage_yg;Fullscreen_yg;Authorization_yg
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

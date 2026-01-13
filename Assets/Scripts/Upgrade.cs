@@ -5,6 +5,7 @@ using TMPro;
 using MoreMountains.Feedbacks;
 using System;
 using System.Globalization;
+using YG;
 
 public class Upgrade : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class Upgrade : MonoBehaviour
     public Stats ballStats;
     public Stat statToUpgrade;
     public UpgradeFunctions upgradeFunctions;
+    public int upgradeIndex;
 
     [Header("Linked Objects")]
     public TextMeshProUGUI titleText;
@@ -30,6 +32,7 @@ public class Upgrade : MonoBehaviour
 
     void Start()
     {
+        LoadProgress();
         UpdateText();
     }
 
@@ -45,6 +48,7 @@ public class Upgrade : MonoBehaviour
             UpdateText();
             EventManager.Instance.Upgrade();
             _successfulPurchaseFeedback.PlayFeedbacks();
+            SaveProgress();
         }
         else
         {
@@ -69,9 +73,23 @@ public class Upgrade : MonoBehaviour
             return $"{number}"; 
         } else
         {
-           return number.ToString("N1", CultureInfo.CreateSpecificCulture("en-US")); // comma delimiter at 1000th & one decimal place
+           return number.ToString("N1", CultureInfo.CreateSpecificCulture("en-US"));
         }
     }
 
+    private void LoadProgress()
+    {
+        currentLevel = YG2.saves.upgradeLevels[upgradeIndex];
+        for (int i = 0; i < currentLevel; i++)
+        {
+            ballStats.IncreaseStat(statToUpgrade, upgradeFunctions.GetEffectAtLevel(i));
+        }
+    }
+
+    private void SaveProgress()
+    {
+        YG2.saves.upgradeLevels[upgradeIndex] = currentLevel;
+        YG2.SaveProgress();
+    }
 }
 

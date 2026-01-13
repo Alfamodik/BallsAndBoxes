@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using MoreMountains.Feedbacks;
+using YG;
 
 public class MoneyManager : MonoBehaviour
 {
@@ -33,6 +34,7 @@ public class MoneyManager : MonoBehaviour
 
     public void Start()
     {
+        LoadProgress();
         _moneyDisplay.UpdateMoneyText(_money);
     }
 
@@ -45,6 +47,7 @@ public class MoneyManager : MonoBehaviour
         _money += amount;
         _moneyChangeFeedback.PlayFeedbacks();
         _moneyDisplay.UpdateMoneyText(_money);
+        SaveProgress();
     }
 
     public void DecreaseMoneyBy(int amount)
@@ -52,6 +55,7 @@ public class MoneyManager : MonoBehaviour
         _money -= amount;
         _moneyChangeFeedback.PlayFeedbacks();
         _moneyDisplay.UpdateMoneyText(_money);
+        SaveProgress();
     }
 
     public int GetMoney()
@@ -68,9 +72,21 @@ public class MoneyManager : MonoBehaviour
             DecreaseMoneyBy((int)price);
             BallSpawnManager.Instance.SpawnBall(ball);
             ball.GetStats().SetStat(Stat.PRICE, price * 2);
+            SaveLoadManager.Instance.SaveBallPrices();
+            SaveLoadManager.Instance.SaveBallCounts();
             return true;
         }
         return false;
     }
 
+    private void LoadProgress()
+    {
+        _money = YG2.saves.money;
+    }
+
+    private void SaveProgress()
+    {
+        YG2.saves.money = _money;
+        YG2.SaveProgress();
+    }
 }

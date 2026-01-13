@@ -1,0 +1,40 @@
+{
+    "intExample": 5,
+    "strExample": "Hello!",
+    "boolExample": [
+        false,
+        false,
+        false,
+        false
+    ],
+    "idSave": 27,
+    "money": 1,
+    "level": 0,
+    "upgradeLevels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "ballPrices": [
+        40.0,
+        50.0,
+        100.0,
+        500.0,
+        400.0
+    ],
+    "ballCounts": [
+        3,
+        0,
+        0,
+        0,
+        0
+    ]
+}
